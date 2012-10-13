@@ -1,0 +1,14 @@
+.container {
+    padding-top: 100px;
+}
+#loading {
+    padding-top: 50px;
+}
+#gistmarklet {
+    padding-top: 70px;
+    text-align: center;
+}
+/* override skeleton header font */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}

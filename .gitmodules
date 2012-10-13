@@ -1,0 +1,3 @@
+[submodule "jQuery-Bookmarklet"]
+	path = jQuery-Bookmarklet
+	url = git://github.com/dschep/jQuery-Bookmarklet.git
