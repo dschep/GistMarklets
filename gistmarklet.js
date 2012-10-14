@@ -18,6 +18,8 @@ var load_gistmarklet = function() {
             $('#gistmarklet').show();
             if (navigator.userAgent.indexOf('Chrome') > 0)
                 $('#note').text('You may need to press ctrl+b to show your bookmarks bar');
+            if (navigator.userAgent.indexOf('Firefox') > 0)
+                $('#note').text('You may need to show your bookmarks bar. Firefox menu > preferences > Bookmarks Toolbar');
             else if (navigator.userAgent.indexOf('MSIE') > 0)
                 $('#note').text('IE not fully supported yet');
             else
