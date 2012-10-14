@@ -2,6 +2,7 @@ var load_gistmarklet = function() {
     $('#landing').hide();
     $('#loading').show();
     var id = location.hash.slice(1);
+    $('#header input').val(id);
     $.getJSON('https://api.github.com/gists/' + id + '?&callback=?',
         function(data) {
             for (var filename in data.data.files) break;
@@ -22,12 +23,17 @@ var hashchange_func =
 $(document).ready(function() {
     $(window).bind('hashchange', function() {
         if (location.hash == '') {
+            $('#header input').val('');
             $('#landing').show();
             $('#loading').hide();
             $('#gistmarklet').hide();
             document.title = 'GistMarklets';
+            $('#demo a').bookmarkletHelperArrow({pos: 700});
         } else {
             load_gistmarklet();
         }
     }).trigger('hashchange');
+    $('#header .button').click(function() {
+        location.hash = '#' + $(this).siblings('input').val();
+    });
 });

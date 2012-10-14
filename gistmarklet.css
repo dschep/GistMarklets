@@ -1,14 +1,57 @@
-.container {
-    padding-top: 100px;
+#header {
+    padding-left: 20px;
+    background: gray;
+    background-image: -webkit-linear-gradient(top, #eee, #ddd);
+    border-bottom: 1px solid #ccc;
+
 }
+#header > * {
+    vertical-align: middle;
+}
+#header .button {
+    margin: 0;
+}
+#header input {
+    width: 75px;
+    margin: 0;
+    display: inline;
+}
+
+#landing {
+    padding-top: 50px;
+}
+
+
 #loading {
     padding-top: 50px;
 }
+#demo {
+    padding-top: 20px;
+    border: 1px solid darkgrey;
+    text-align: center;
+}
+#demo-gist {
+    margin-top: 25px;
+}
+.example-title {
+    padding-top: 50px;
+    text-align: center;
+}
+
+
 #gistmarklet {
     padding-top: 70px;
     text-align: center;
 }
+
 /* override skeleton header font */
 h1, h2, h3, h4, h5, h6 {
     font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+hr.large {
+border: none;
+height: 8px;
+background: #EBEBEB;
+margin: 50px 0;
 }

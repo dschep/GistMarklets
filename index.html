@@ -8,7 +8,7 @@
 	<!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8">
-	<title>GistMarklet</title>
+	<title>GistMarklets</title>
 	<meta name="description" content="Simple installation pages for
     bookmarklets hosted as Gists">
 	<meta name="author" content="Daniel Schep">
@@ -40,11 +40,38 @@
 </head>
 <body>
     <a href="https://github.com/you"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+
+    <div id="header">
+        <a href="#"><img src="images/textual-logo.png"></img></a>
+        <input type="text" placeholder="Gist ID"></input>
+        <a class="button" href="javascript:void(0)">Load Gist</a>
+    </div>
+
     <div class="container">
-        <h1><a href="#"><img src="images/textual-logo.png"></img></a></h1>
+        <div style="clear:both"></div>
         <div id="landing" style="display:none">
-            <h3>Make easy installation pages for
-                <a href="http://gist.github.com/">Gist</a> hosted Bookmarklets</h3>
+            <h1 style="text-align:center">Make easy to install bookmarlets with
+                <a href="http://gist.github.com/">Gists</a>.</h1>
+
+            <div class="clearfix">
+                <h4 class="eight columns alpha example-title">
+                    Turn this
+                </h4>
+                <h4 class="eight columns omega example-title">
+                    Into this
+                </h4>
+
+                <div class="eight columns alpha" id="demo-gist">
+                    <script src="https://gist.github.com/3886934.js"> </script>
+                </div>
+                <div class="eight columns omega" id="demo">
+                    <p>Drag This button to your bookmarks bar</p>
+                    <a class="button" href="javascript:alert('hello world!');">Alert Bookmarklet</a>
+                </div>
+            </div>
+
+            <hr class="large" />
+
             <p>Simply add the ID of your Gist as the hash on this url</p>
             <p>Try <a href="#3875317">Gist 3875317</a></p>
         </div>
@@ -53,7 +80,7 @@
         </div>
         <div id="gistmarklet" style="display:none">
             <p>Drag This button to your bookmarks bar</p>
-                <a class="button"></a>
+            <a class="button"></a>
         </div>
     </div><!-- container -->
 </body>
