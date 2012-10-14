@@ -1,7 +1,9 @@
 #header {
     padding-left: 20px;
     background: gray;
-    background-image: -webkit-linear-gradient(top, #eee, #ddd);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#dddddd'); /* for IE */
+    background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#ddd)); /* for webkit browsers */
+    background: -moz-linear-gradient(top,  #eee,  #ddd); /* for firefox 3.6+ */
     border-bottom: 1px solid #ccc;
 
 }
