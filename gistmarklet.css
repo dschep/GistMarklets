@@ -5,14 +5,16 @@
     border-bottom: 1px solid #ccc;
 
 }
-#header > * {
+#header img {
     vertical-align: middle;
 }
 #header .button {
+    vertical-align: middle;
     margin: 0;
 }
 #header input {
     width: 75px;
+    vertical-align: middle;
     margin: 0;
     display: inline;
 }
