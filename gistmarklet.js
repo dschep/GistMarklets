@@ -16,6 +16,10 @@ var load_gistmarklet = function() {
             document.title = 'GistMarklets: ' + data.data.description;
             $('#loading').hide();
             $('#gistmarklet').show();
+            if (navigator.userAgent.indexOf('Chrome') > 0)
+                $('#note').text('You may need to press ctrl+b to show your bookmarks bar');
+            else
+                $('#note').text('');
     });
 }
 
