@@ -12,7 +12,7 @@ var load_gistmarklet = function() {
             $('#gistmarklet a')
                 .attr('href', script)
                 .text(data.data.description)
-                .bookmarkletHelperArrow();
+                .bookmarkletHelperArrow({pos: 350});
             document.title = 'GistMarklets: ' + data.data.description;
             $('#loading').hide();
             $('#gistmarklet').show();
@@ -36,7 +36,7 @@ $(document).ready(function() {
             $('#loading').hide();
             $('#gistmarklet').hide();
             document.title = 'GistMarklets';
-            $('#demo a').bookmarkletHelperArrow({pos: 700});
+            $('#demo a').bookmarkletHelperArrow({pos: 350});
         } else {
             load_gistmarklet();
         }
