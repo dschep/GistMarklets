@@ -1,10 +1,11 @@
 #header {
     padding-left: 20px;
     background: gray;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#dddddd'); /* for IE */
-    background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#ddd)); /* for webkit browsers */
-    background: -moz-linear-gradient(top,  #eee,  #ddd); /* for firefox 3.6+ */
-    border-bottom: 1px solid #ccc;
+    -webkit-linear-gradient(top, #F9F9F9, #F3F3F3);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#f3f3f3'); /* for IE */
+    background: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#f3f3f3)); /* for webkit browsers */
+    background: -moz-linear-gradient(top,  #f9f9f9,  #f3f3f3); /* for firefox 3.6+ */
+    border-bottom: 1px solid #E5E5E5;
 
 }
 #header img {
