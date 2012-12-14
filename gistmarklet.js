@@ -7,15 +7,20 @@ var load_gistmarklet = function() {
         function(data) {
             for (var filename in data.data.files) break;
             script = data.data.files[filename].content;
+
             if (script.slice(0, 11) != 'javascript:')
                 script = 'javascript:' + script;
+
             $('#gistmarklet a')
                 .attr('href', script)
                 .text(data.data.description)
                 .bookmarkletHelperArrow({pos: 350});
+
             document.title = 'GistMarklets: ' + data.data.description;
+
             $('#loading').hide();
             $('#gistmarklet').show();
+
             if (navigator.userAgent.indexOf('Chrome') > 0)
                 $('#note').text('You may need to press ctrl+b to show your bookmarks bar');
             else if (navigator.userAgent.indexOf('Firefox') > 0)
