@@ -3,7 +3,7 @@ var load_gistmarklet = function() {
     $('#loading').show();
     var id = location.hash.slice(1);
     $('#header input').val(id);
-    $.getJSON('https://api.github.com/gists/' + id + '?&callback=?',
+    $.getJSON('//api.github.com/gists/' + id + '?&callback=?',
         function(data) {
             for (var filename in data.data.files) break;
             script = data.data.files[filename].content;
