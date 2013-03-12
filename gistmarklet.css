@@ -1,5 +1,5 @@
 #header {
-    background: gray;
+    background: #f5f5f5;
     -webkit-linear-gradient(top, #F9F9F9, #F3F3F3);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#f3f3f3'); /* for IE */
     background: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#f3f3f3)); /* for webkit browsers */
