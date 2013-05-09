@@ -11,10 +11,12 @@ var load_gistmarklet = function() {
             if (script.slice(0, 11) != 'javascript:')
                 script = 'javascript:' + script;
 
-            $('#gistmarklet a')
+            $('#gistmarklet a').eq(0)
                 .attr('href', script)
                 .text(data.data.description)
                 .bookmarkletHelperArrow({pos: 350});
+            $('#gistmarklet a').eq(1)
+                .attr('href', 'https://gist.github.com/' + id);
 
             document.title = 'GistMarklets: ' + data.data.description;
 
